@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Xamarin_app.MainPage">
+    <ScrollView>
+        <Grid RowSpacing="30" Margin="15, 30, 15, 0">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="70" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Label Text="Добро пожаловать в ад тестировщика!" FontSize="32" FontAttributes="Bold" HorizontalTextAlignment="Center" />
+            <Image Grid.Row="1" Source="icon.png" Margin="0, 0, 0, 80"/>
+            <Entry Grid.Row="2" Placeholder="Логин" />
+            <Entry Grid.Row="3" Placeholder="Пароль" IsPassword="True" />
+            <Button x:Name="LoginButton" Grid.Row="4" Text="Вход" FontSize="Medium" FontAttributes="Bold" />
+            <Label Grid.Row="5" Text="Регистрация" Margin="0, 10" HorizontalOptions="Center" VerticalOptions="End" FontSize="Medium" >
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
+                </Label.GestureRecognizers>
+            </Label>
+        </Grid>
+    </ScrollView>
+</ContentPage> 
