@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace Xamarin_app
+namespace Xamarin_app.View
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class RegistrationPage : ContentPage
+    public partial class RegPage : ContentPage
     {
-        public RegistrationPage()
+        public RegPage()
         {
             InitializeComponent();
         }

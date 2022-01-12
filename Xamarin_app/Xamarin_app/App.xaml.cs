@@ -2,6 +2,8 @@
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
+using Xamarin_app.View;
+
 namespace Xamarin_app
 {
     public partial class App : Application
@@ -10,7 +12,7 @@ namespace Xamarin_app
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new ContactsList();
         }
 
         protected override void OnStart()
